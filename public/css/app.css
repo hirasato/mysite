@@ -73,6 +73,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #f8fafc;
+
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -169,14 +170,64 @@ sup {
   top: -0.5em;
 }
 
+.toplogin  {
+  color: #FFFFFF;
+  font-size: 80px;
+  font-family:sans-serif;
+  font-weight: 900; 
+  vertical-align:-150%;
+  position:relative;
+  right:100px;
+}
+
+.toplogin:hover {
+  color: #FF0000;
+  text-decoration: underline;
+}
+
+.toplogin:not([href]):not([class]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toplogin:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.topregister{
+  color: #FFFFFF;
+  font-size: 80px;
+  font-family:sans-serif;
+  font-weight: 900; 
+  vertical-align:-150%;
+  position:relative;
+  left:100px;
+}
+
+.topregister:hover {
+  color: #FF0000;
+  text-decoration: underline;
+}
+
+.topregister:not([href]):not([class]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.topregister:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
 a {
-  color: #3490dc;
+  color: #007bff;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #1d68a7;
+  color: #0056b3;
   text-decoration: underline;
 }
 
@@ -241,6 +292,19 @@ label {
   margin-bottom: 0.5rem;
 }
 
+.edit .rating label{
+  position:relative;
+  right: 350px;
+  font-size:20px;
+}
+
+.create .rating label{
+  position:relative;
+  right: 240px;
+  font-size:20px;
+}
+
+
 button {
   border-radius: 0;
 }
@@ -274,8 +338,16 @@ select {
   cursor: pointer;
 }
 
+.edit select{
+  word-wrap: normal;
+  right: 290px;
+  position: relative;
+}
+
 select {
   word-wrap: normal;
+  right: 200px;
+  position: relative;
 }
 
 button,
@@ -389,32 +461,67 @@ h6,
 
 h1,
 .h1 {
-  font-size: 2.25rem;
+  font-size: 5rem;
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #000;
+  position: relative;
+  border: 4px solid #000;
+  right:130px;
+  white-space: nowrap;
+  display:inline-block;
 }
 
 h2,
 .h2 {
-  font-size: 1.8rem;
+  font-size: 2.25rem;
+  color:#000000;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif!important;
+  position: relative;
+  padding: 1rem 1rem;
+  border: 4px solid #000;
+  text-align: center;
+  
+}
+
+h2:before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  content: '';
+  border: 2px solid #000;
 }
 
 h3,
 .h3 {
-  font-size: 1.575rem;
+  font-size: 2.5rem;
+  color:#000000;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif!important;
+  
 }
 
 h4,
 .h4 {
-  font-size: 1.35rem;
+  font-size: 2.25rem;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif!important;
+  color: black;
 }
 
 h5,
 .h5 {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif!important;
+  color:#fff;
 }
 
 h6,
 .h6 {
-  font-size: 0.9rem;
+  font-size: 2.25rem;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif!important;
+  color:#fff;
 }
 
 .lead {
@@ -596,7 +703,7 @@ pre code {
   .container-md,
   .container-sm,
   .container {
-    max-width: 720px;
+    max-width: 850px;
   }
 }
 
@@ -619,11 +726,22 @@ pre code {
   }
 }
 
+.profilerow {
+  display: flex;
+  flex-wrap: wrap;
+  /*margin-right: -15px;*/
+  /*margin-left: -15px;*/
+  text-align:center;
+  color:white;
+}
+
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px;
+  /*margin-left: -15px;*/
+  text-align:center
 }
 
 .no-gutters {
@@ -1179,11 +1297,37 @@ pre code {
     max-width: 8.33333333%;
   }
 
+  .create .col-md-2 {
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
+    white-space: nowrap;
+    right: 120px;
+    font-size: 20px;
+  }
+ 
+ .create .image .col-md-2{
+   position:relative;
+   right: auto;
+ }
+ 
+ .create .rating  {
+   font-size: 20px;
+ }
+ 
+ .edit .col-md-2 {
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
+    white-space: nowrap;
+    right: 10px;
+    font-size: 20px;
+ }
+ 
   .col-md-2 {
     flex: 0 0 16.66666667%;
     max-width: 16.66666667%;
+    white-space: nowrap;
   }
-
+  
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%;
@@ -1201,7 +1345,7 @@ pre code {
 
   .col-md-6 {
     flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 140%;
   }
 
   .col-md-7 {
@@ -2193,6 +2337,7 @@ select.form-control:focus::-ms-value {
 .form-control-range {
   display: block;
   width: 100%;
+  color:#3399FF;
 }
 
 .col-form-label {
@@ -3593,6 +3738,7 @@ input[type=button].btn-block {
 }
 
 .dropdown-item {
+  font-size: 20px;
   display: block;
   width: 100%;
   padding: 0.25rem 1.5rem;
@@ -4534,6 +4680,7 @@ input[type=button].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  background-color: white;
 }
 
 .navbar .container,
@@ -4702,7 +4849,7 @@ input[type=button].btn-block {
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0.5rem;
+    padding-right: 10rem;
     padding-left: 0.5rem;
   }
 
@@ -4939,21 +5086,21 @@ input[type=button].btn-block {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: #000;
 }
 
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: #F00;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: #212529;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: #F00;
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
@@ -4964,7 +5111,7 @@ input[type=button].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: #F00;
 }
 
 .navbar-dark .navbar-toggler {

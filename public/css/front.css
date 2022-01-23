@@ -1,0 +1,123 @@
+.top {
+  color:#000000;
+  background-color:#EEEEEE ;
+  background-image: url(https://media.istockphoto.com/photos/athlete-muscular-fitness-male-model-pulling-up-on-horizontal-bar-picture-id610576810?k=20&m=610576810&s=612x612&w=0&h=pUlLZjQlQkmemNpwurubfW-p6v-k19iyxbbrrG72KRc=);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main {
+  color:#000000;
+  background-image: url(https://tk.ismcdn.jp/mwimgs/6/7/1140/img_67aeb564bd71ebb343ce4e9d148cad93224746.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainwaku .title {
+  background-color: #1B73BA;
+}
+.mainwaku .row {
+  width: 150%;
+  right: 115px;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px #000000;
+  -moz-box-shadow: 0px 2px 2px #000000;
+  -webkit-box-shadow: 0px 2px 2px #000000;
+  color: #000000;
+  display:block;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+}
+.mainwaku .image {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  display: block;
+}
+.mainwaku p {
+  background-color: #FFFFFF;
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 8px;
+}
+.mainwaku .title {
+  background-color:#FFFF00;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 8px;
+  position: relative;
+}
+.login {
+  color:#000000;
+  background-color:#EEEEEE ;
+}
+
+.header .logo {
+  width: 120px;
+  height: 82px;
+}
+
+.headline .caption {
+  position: relative;
+  width: 350px;
+}
+
+.headline .caption .image img {
+  width: 100%;
+}
+
+.headline .caption .title {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.headline .caption .title h1 {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.headline .caption .body {
+  font-size: 0.8em;
+}
+
+.posts .post .date {
+  font-size: 1.5em;
+  color: #000000;
+}
+
+.posts .post .title {
+  color:#000000;	
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.posts .post .body {
+  font-size: 1.5em;
+}
+
+.posts .post .image img {
+  position: relative;
+  right: 120px;
+}
+
+.star {
+  font-size: 1.5em;
+}
+
+.star p {
+  font-size: 1.5em;
+}
+

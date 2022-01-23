@@ -5,6 +5,28 @@ body {
   color: #fff;
 }
 
+.create {
+  color:#000000;
+  background-image: url(https://contents.melos.media/wp-content/uploads/2019/09/20173625/GettyImages-1015409276.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.itirann {
+  color:#000000;
+  background-image: url(https://gorilla.clinic/operation/diet/media/ddwp1/wp-content/uploads/2020/10/f7d9e49ba9c22106744f3ee9645fc19c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+}
+
+.edit {
+  color:white;
+  background-image: url(https://toremo.jp/wp-content/uploads/2018/09/shutterstock_1170087223.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .navbar-laravel {
   background-color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);

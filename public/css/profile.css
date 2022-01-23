@@ -3,6 +3,40 @@ body {
   background-position: center;
   background-color: #000;
   color: #fff;
+  white-space: nowrap;
+  font-size:20px;
+}
+
+.profile {
+  color:#000000;
+  background-image: url(https://assets.media-platform.com/lifehacker/dist/images/2020/07/13/shutterstock_1681957492-w960.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profilewaku{
+    margin: 2em 0;
+    position: relative;
+    padding: 0.9em 8em;
+    border-top: solid 4px #fff;
+    border-bottom: solid 4px #fff;
+    right: 70px;
+    background-color: black;
+}
+.profilewaku:before, .profilewaku:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: #fff;
+}
+.profilewaku:before {left: 10px;}
+.profilewaku:after {right: 10px;}
+.profilewaku p {
+    margin: 0; 
+    padding: 0;
 }
 
 .navbar-laravel {

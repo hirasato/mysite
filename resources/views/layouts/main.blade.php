@@ -23,16 +23,13 @@
         {{-- Laravel標準で用意されているCSSを読み込みます --}}
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
         
-        <link href="{{ secure_asset('css/admin.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/front.css') }}" rel="stylesheet">
     </head>
     <body>
         <div id="app">
             {{-- 画面上部に表示するナビゲーションバー。 --}}
             <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
                 <div class="container">
-                    <a class="navbar-brand" href="{{ url('admin/site/main') }}">
-                        メインページ
-                    </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -40,11 +37,23 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav mr-auto">
-
+                        <li>
+                            <a class="navbar-brand" href="{{ url('/profile') }}">
+                               管理者プロフィール
+                            </a>
                         </ul>
-
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
+                            <li>
+                            <a class="navbar-brand" href="{{ url('admin/site') }}">
+                               投稿一覧
+                            </a>
+                            </li>
+                            <li>
+                            <a class="navbar-brand" href="{{ url('admin/site/create') }}">
+                               新規投稿作成
+                            </a>
+                            </li>
                               <!-- Authentication Links -->
                         {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
                         @guest
