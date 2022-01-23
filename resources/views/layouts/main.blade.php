@@ -41,6 +41,12 @@
                             <a class="navbar-brand" href="{{ url('/profile') }}">
                                管理者プロフィール
                             </a>
+                        </li>
+                        <li>
+                            <a class="navbar-brand" href="{{ url('admin/profile/create') }}">
+                               プロフィール作成画面
+                            </a>
+                        </li>
                         </ul>
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
