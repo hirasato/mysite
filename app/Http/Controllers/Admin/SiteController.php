@@ -13,6 +13,8 @@ use App\Star;
 
 use Carbon\Carbon;
 
+use Storage; 
+
 class SiteController extends Controller
 {
     //
@@ -32,8 +34,8 @@ class SiteController extends Controller
       
       // フォームから画像が送信されてきたら、保存して、$site->image_path に画像のパスを保存する
       if (isset($form['image'])) {
-        $path = $request->file('image')->store('public/image');
-        $site->image_path = basename($path);
+        $path = Storage::disk('s3')->putFile('/',$site_form['image'],'public');
+        $site->image_path = Storage::disk('s3')->url($path);
       } else {
           $site->image_path = null;
       }
@@ -97,8 +99,8 @@ class SiteController extends Controller
        if ($request->remove == 'true') {
           $site_form['image_path'] = null;
       } elseif ($request->file('image')) {
-          $path = $request->file('image')->store('public/image');
-          $site_form['image_path'] = basename($path);
+          $path = Storage::disk('s3')->putFile('/',$site_form['image'],'public');
+          $site->image_path = Storage::disk('s3')->url($path);
       } else {
           $site_form['image_path'] = $site->image_path;
       }

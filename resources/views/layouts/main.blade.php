@@ -43,6 +43,11 @@
                             </a>
                         </li>
                         <li>
+                            <a class="navbar-brand" href="{{ url('admin/profile/edit') }}">
+                               プロフィール編集画面
+                            </a>
+                        </li>
+                        <li>
                             <a class="navbar-brand" href="{{ url('admin/profile/create') }}">
                                プロフィール作成画面
                             </a>
