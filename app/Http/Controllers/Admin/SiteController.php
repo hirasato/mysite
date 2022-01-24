@@ -34,7 +34,7 @@ class SiteController extends Controller
       
       // フォームから画像が送信されてきたら、保存して、$site->image_path に画像のパスを保存する
       if (isset($form['image'])) {
-        $path = Storage::disk('s3')->putFile('/',$site_form['image'],'public');
+        $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
         $site->image_path = Storage::disk('s3')->url($path);
       } else {
           $site->image_path = null;
