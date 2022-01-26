@@ -145,8 +145,8 @@ return [
     |
     */
 
-    'attributes' => [ 'title' => 'タイトル',
-                      'body' => '本文',
+    'attributes' => [ 'title' => 'トレーニング部位',
+                      'body' => 'トレーニング内容',
                        'name' => '氏名',
                        'gender' => '性別',
                        'hobby' => '趣味',
