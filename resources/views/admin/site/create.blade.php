@@ -5,17 +5,19 @@
 {{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
 @section('content')
     <div class="container">
-        <div class="row">
+        <div class="createrow">
             <div class="col-md-8 mx-auto">
                 <h3>投稿作成</h3>
+                <div class="error">
                 <form action="{{ action('Admin\SiteController@create') }}" method="post" enctype="multipart/form-data">
                     @if (count($errors) > 0)
                         <ul>
                             @foreach($errors->all() as $e)
-                                <li>{{ $e }}入力してください。</li>
+                                <li>{{ $e }}を入力してください。</li>
                             @endforeach
                         </ul>
                     @endif
+                    </div>
                     <body class="create">
                     <div class="form-group row">
                         <label class="col-md-2">・トレーニング部位</label>

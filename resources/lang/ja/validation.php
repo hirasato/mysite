@@ -150,7 +150,8 @@ return [
                        'name' => '氏名',
                        'gender' => '性別',
                        'hobby' => '趣味',
-                       'target' => '目標'
+                       'target' => '目標',
+                       'rating' => 'トレーニング難易度'
                     ],
 
 ];

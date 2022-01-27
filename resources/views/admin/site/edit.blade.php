@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
+        <div class="editrow">
             <div class="col-md-8 mx-auto">
                 <h6>投稿編集</h6>
                 <form action="{{ action('Admin\SiteController@update') }}" method="post" enctype="multipart/form-data">
@@ -63,7 +63,7 @@
                 </form>
                  <div class="row mt-5">
                     <div class="col-md-4 mx-auto">
-                        <h2>編集履歴</h2>
+                        <h11>編集履歴</h11>
                         <ul class="list-group">
                             @if ($site_form->histories != NULL)
                                 @foreach ($site_form->histories as $history)

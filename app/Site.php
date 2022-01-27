@@ -12,6 +12,7 @@ class Site extends Model
     public static $rules = array(
         'title' => 'required',
         'body' => 'required',
+        'rating' => 'required',
     );
     
      // Site Modelに関連付けを行う

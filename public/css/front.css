@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .main {
@@ -12,6 +13,7 @@
   background-image: url(https://tk.ismcdn.jp/mwimgs/6/7/1140/img_67aeb564bd71ebb343ce4e9d148cad93224746.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .mainwaku .title {
@@ -32,20 +34,33 @@
   -o-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
+  margin: 0px 0px 30px;
 }
 .mainwaku .image {
   background-color: #FFFFFF;
-  box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
-  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
-  display: block;
+  font-weight: bold;
+  /*border: solid 1px #000000;*/
+  margin: 0; 
+  padding: 0;
+  bottom: 20px;
+  border-right: none !important;
+　border-left: none !important;
 }
+
 .mainwaku p {
   background-color: #FFFFFF;
   font-size: 13px;
   line-height: 1.6;
-  padding: 8px;
+  padding: 0px;
+  font-weight: bold;
+  margin: 0; 
+  bottom: 12px;
+  position: relative;
+  border-right: none !important;
+  border-left: none !important;
 }
+
 .mainwaku .title {
   background-color:#FFFF00;
   box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
@@ -94,30 +109,55 @@
 }
 
 .posts .post .date {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #000000;
+  position:relative;
+  bottom:20px;
+  /*font-weight: bold;*/
+  /*border: solid 1px #000000;*/
+  /*margin: 0; */
+  /*padding: 0;*/
+  /*border-right: none !important;*/
+  /*border-left: none !important;*/
+  text-align:center
 }
 
 .posts .post .title {
   color:#000000;	
   font-size: 2em;
   font-weight: bold;
+  text-align:center
 }
 
 .posts .post .body {
   font-size: 1.5em;
+  font-weight: bold;
+  margin: 0; 
+  padding: 0;
+  bottom: 12px;
+  position: relative;
+  text-align: justify;
+  color: #212529;;/*文字色*/
+  background: #FFF;
+  border: solid 3px #212529;;/*線*/
+  border-radius: 10px;/*角の丸み*/
 }
 
 .posts .post .image img {
   position: relative;
-  right: 120px;
+  right: 50px;
+  width: 450px;
 }
 
 .star {
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif!important;
+  line-height:3;
+  font-weight: bold;
 }
 
 .star p {
   font-size: 1.5em;
+  text-align: center;
 }
 
