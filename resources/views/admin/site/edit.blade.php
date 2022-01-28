@@ -16,19 +16,19 @@
                     @endif
                     <body class="edit">
                     <div class="form-group row">
-                        <label class="col-md-2" for="title">タイトル</label>
+                        <label class="col-md-2" for="title">トレーニング部位</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="title" value="{{ $site_form->title }}">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="body">本文</label>
+                        <label class="col-md-2" for="body">トレーニング内容</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="body" rows="10">{{ $site_form->body }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="image">画像</label>
+                        <label class="col-md-22" for="image">画像</label>
                         <div class="col-md-10">
                             <input type="file" class="form-control-file" name="image">
                             <div class="form-text text-info">
